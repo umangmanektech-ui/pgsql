@@ -1,0 +1,41 @@
+{
+  "name": "express-postgres-prisma7-product-crud",
+  "version": "1.0.0",
+  "description": "Express.js application with PostgreSQL, Prisma 7, and TypeScript Product CRUD",
+  "type": "module",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "start": "tsx src/server.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio",
+    "prisma:migrate": "prisma migrate dev",
+    "build": "tsc"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "postgresql",
+    "prisma7",
+    "typescript",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.3.0",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.7",
+    "@types/pg": "^8.11.11",
+    "prisma": "^7.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
